@@ -4,11 +4,14 @@ from datetime import datetime, timezone
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 # ===================== تنظیمات امن =====================
 # مقادیر محرمانه را در Environment Variables هاست تنظیم کنید، نه در کد عمومی.
-OPENAI_API_KEY = "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"
-OPENAI_MODEL = "gpt-4o-mini"
-ADMIN_PASSWORD = "Amani_2026"
-TELEGRAM_BOT_TOKEN = "8780530022:AAGpoovO1BQlwFjM9IKyF5OAWwhqlfHtdGQ"
-TELEGRAM_ADMIN_CHAT_ID = "8764900501"
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
+
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "")
+
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_ADMIN_CHAT_ID = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "")
+
 DATABASE_PATH = "team810_stats.sqlite3"
 # ===========================================================
 PROMPTS = {
