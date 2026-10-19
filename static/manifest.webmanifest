@@ -1,0 +1,12 @@
+{
+  "name": "TEAM 810 SCIENCE",
+  "short_name": "TEAM 810",
+  "description": "مرکز علمی ریاضی، فزیک و کیمیا",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080d1a",
+  "theme_color": "#159957",
+  "lang": "fa",
+  "dir": "rtl"
+}
