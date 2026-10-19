@@ -4,12 +4,12 @@ from datetime import datetime, timezone
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 # ===================== تنظیمات امن =====================
 # مقادیر محرمانه را در Environment Variables هاست تنظیم کنید، نه در کد عمومی.
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-OPENAI_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
-ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "")
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
-TELEGRAM_ADMIN_CHAT_ID = os.environ.get("TELEGRAM_ADMIN_CHAT_ID", "")
-DATABASE_PATH = os.environ.get("DATABASE_PATH", "team810_stats.sqlite3")
+OPENAI_API_KEY = "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"
+OPENAI_MODEL = "gpt-4o-mini"
+ADMIN_PASSWORD = "Amani_2026"
+TELEGRAM_BOT_TOKEN = "8780530022:AAGpoovO1BQlwFjM9IKyF5OAWwhqlfHtdGQ"
+TELEGRAM_ADMIN_CHAT_ID = "8764900501"
+DATABASE_PATH = "team810_stats.sqlite3"
 # ===========================================================
 PROMPTS = {
  "math": "You are a careful mathematics tutor. Solve step by step. Reply in the user's language.",
