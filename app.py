@@ -4,7 +4,7 @@ from datetime import datetime, timezone
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 # ===================== تنظیمات امن =====================
 # مقادیر محرمانه را در Environment Variables هاست تنظیم کنید، نه در کد عمومی.
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 OPENAI_MODEL = "gpt-4o-mini"
 ADMIN_PASSWORD = "Amani_2026"
 TELEGRAM_BOT_TOKEN = "8780530022:AAGpoovO1BQlwFjM9IKyF5OAWwhqlfHtdGQ"
